@@ -2,7 +2,7 @@ import '../../css/Menu.css';
 export default function Menu() {
   return (
     <nav className="navMenu">
-      <img className="logo" src="img/logo.png" alt="Breda Distribuidora" />
+      <img className="logo" src="/img/logo.png" alt="Breda Distribuidora" />
       <div className="menuNavegacao">
         <div className="menuLinks">
           <a className="menuLink" href="/">
