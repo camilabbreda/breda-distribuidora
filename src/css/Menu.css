@@ -1,0 +1,43 @@
+.navMenu {
+    display: flex;
+    /* border-bottom: red 2px solid; */
+    width: auto;
+    height: 80px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;    
+}
+.logo{
+    /* border: 1px solid purple; */
+    width: auto;
+    height: 100px;
+    margin-top: -9px;
+    margin-left: 20px;
+}
+.menuNavegacao{
+    display: flex;
+    background-color: #F3525A;
+    /* border: 1px solid blue; */
+    width: 100%;
+    justify-content: right;
+    align-items: center;
+    clip-path: polygon(40px 0, 100% 0, 100% 100%, 0px 100%);
+}
+.menuLinks{
+    display: flex;
+    width: 65%;
+    justify-content: flex-end;
+    
+}
+.menuLink{
+    font-size: 18px;
+    width: 150px;
+    font-family: sans-serif;
+    text-decoration: none;
+    color: white;
+}
+
+.menuLink img{
+    width: 25px;
+    height: auto;
+}
