@@ -1,22 +1,44 @@
 import '../../css/Menu.css';
+import { NavLink } from 'react-router-dom';
 export default function Menu() {
   return (
     <nav className="navMenu">
       <img className="logo" src="/img/logo.png" alt="Breda Distribuidora" />
       <div className="menuNavegacao">
         <div className="menuLinks">
-          <a className="menuLink" href="/">
+          <NavLink
+            to="/"
+            end
+            className={({ isActive }) =>
+              isActive ? 'menuLink menuLinkActive' : 'menuLink'
+            }
+          >
             Página inicial
-          </a>
-          <a className="menuLink" href="/quemsomos">
+          </NavLink>
+          <NavLink
+            to="/quemsomos"
+            className={({ isActive }) =>
+              isActive ? 'menuLink menuLinkActive' : 'menuLink'
+            }
+          >
             Quem somos
-          </a>
-          <a className="menuLink" href="/nossasmarcas">
+          </NavLink>
+          <NavLink
+            to="/nossasmarcas"
+            className={({ isActive }) =>
+              isActive ? 'menuLink menuLinkActive' : 'menuLink'
+            }
+          >
             Nossas marcas
-          </a>
-          <a className="menuLink" href="/faleconosco">
+          </NavLink>
+          <NavLink
+            to="/faleconosco"
+            className={({ isActive }) =>
+              isActive ? 'menuLink menuLinkActive' : 'menuLink'
+            }
+          >
             Fale conosco
-          </a>
+          </NavLink>
           <a
             className="menuLink"
             target='_blank'

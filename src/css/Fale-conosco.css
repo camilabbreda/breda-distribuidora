@@ -12,13 +12,20 @@
     align-items:center; 
     justify-content:center;
 }
+td{
+    font-size: 23px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
 .title{
     margin: 0;
     margin-bottom: 15px;
+    font-size: 28px;
     padding: 0;
 }
 
 .icon{
-    width: 20px !important;
+    width: 30px !important;
     height: auto !important;
 }

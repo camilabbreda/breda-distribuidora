@@ -35,6 +35,13 @@
     font-family: sans-serif;
     text-decoration: none;
     color: white;
+    font-weight: 400;
+    transition: font-size 0.15s ease, font-weight 0.15s ease;
+}
+
+.menuLinkActive{
+    font-size: 18px;
+    font-weight: 700;
 }
 
 .menuLink img{
