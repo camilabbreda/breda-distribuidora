@@ -2,7 +2,7 @@
   position: sticky;
   top: 0;
   z-index: 100;
-  width: 100%;
+  width: 98%;
   background: rgba(255, 255, 255, 0.8);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
@@ -90,19 +90,18 @@
 .navMenuSocial {
   display: flex;
   align-items: flex-start;
-  margin-left: 8px;
+  margin-left: 25px;
 }
 
 .navMenuSocialBtn {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 60px;
-  min-height: 50px;
+  width: 80%;
+  min-height: 30px;
   padding: 10px 24px;
   box-sizing: border-box;
   border-radius: 8px;
-  box-shadow: 0 12px 32px rgba(155, 0, 4, 0.08);
   text-decoration: none;
 }
 
@@ -112,37 +111,93 @@
   align-items: center;
   justify-content: center;
   width: 30px;
-  height: 30px;
+  height: 50%;
   overflow: hidden;
 }
 
 .navMenuSocialBtnInner img {
   display: block;
   width: 100%;
-  height: auto;
-  max-height: 31px;
+  min-height: 30px;
+  max-height: 120px;
   object-fit: contain;
 }
 
-@media (max-width: 900px) {
-  .navMenu {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 16px;
-  }
+/* Mobile header: brand | social | hamburger (class set from Menu.tsx) */
+.navMenuMobile {
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  min-height: 64px;
+  padding: 12px 16px;
+}
 
-  .navMenuLinks {
-    justify-content: flex-start;
-    width: 100%;
-  }
+.navMenuMobile .navMenuBrand {
+  min-width: 0;
+  flex-shrink: 1;
+}
 
-  .navMenuLink {
-    margin-left: 0;
-    margin-right: 20px;
-    margin-bottom: 8px;
-  }
+.navMenuMobile .navMenuBrandTitle {
+  font-size: 22px;
+  line-height: 28px;
+}
 
-  .navMenuSocial {
-    margin-left: 0;
-  }
+.navMenuMobile .navMenuBrandSubtitle {
+  font-size: 10px;
+  line-height: 14px;
+  letter-spacing: 0.16em;
+}
+
+.navMenuSocialMobile {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  flex-shrink: 0;
+}
+
+.navMenuSocialMobile .navMenuSocialBtn {
+  padding: 6px 8px;
+  min-height: 40px;
+  width: auto;
+}
+
+.navMenuSocialMobile .navMenuSocialBtnInner {
+  width: 26px;
+}
+
+.navMenuSocialMobile .navMenuSocialBtnInner img {
+  min-height: 24px;
+  max-height: 28px;
+}
+
+.navMenuBurger {
+  flex-shrink: 0;
+  margin-left: 0;
+}
+
+.navMenuDrawerPaper {
+  width: min(320px, 85vw);
+  padding-top: 8px;
+  background: rgba(255, 255, 255, 0.98);
+}
+
+.navMenuDrawerInner {
+  display: flex;
+  flex-direction: column;
+  padding: 8px 0 24px;
+}
+
+.navMenuDrawerLink {
+  display: block;
+  margin-left: 0 !important;
+  margin-right: 0;
+  padding: 14px 20px;
+  border-bottom: 2px solid transparent;
+  font-size: 15px;
+}
+
+.navMenuDrawerLink:hover {
+  background: rgba(185, 28, 28, 0.06);
 }

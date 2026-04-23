@@ -200,9 +200,6 @@ export default function PaginaInicial() {
           </div>
         </section>
       </main>
-      <footer className="pi-footer">
-        <p>© 2026 BREDA Distribuidora. Todos os direitos reservados.</p>
-      </footer>
     </div>
   );
 }

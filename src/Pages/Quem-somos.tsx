@@ -167,9 +167,6 @@ export default function QuemSomos() {
           </div>
         </section>
       </main>
-      <footer className="qs-footer">
-        <p>© 2026 BREDA Distribuidora. Todos os direitos reservados.</p>
-      </footer>
     </div>
   );
 }

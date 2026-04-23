@@ -407,24 +407,6 @@
   filter: brightness(1.02);
 }
 
-.qs-footer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 78px;
-  padding: 32px 32px;
-  border-top: 1px solid rgba(230, 189, 183, 0.1);
-  background: #f3f3f3;
-  text-align: center;
-}
-
-.qs-footer p {
-  margin: 0;
-  font-size: 12px;
-  line-height: 16px;
-  color: #5d3f3b;
-}
-
 @media (max-width: 960px) {
   .qs-introGrid {
     grid-template-columns: 1fr;

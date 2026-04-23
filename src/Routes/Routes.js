@@ -4,6 +4,7 @@ import Menu from '../Components/Menu/Menu';
 import QuemSomos from '../Pages/Quem-somos';
 import NossasMarcas from '../Pages/Nossas-Marcas';
 import FaleConosco from '../Pages/Fale-conosco';
+import Footer from '../Components/Footer/Footer';
 export default function Navigation() {
   return (
     <>
@@ -14,6 +15,7 @@ export default function Navigation() {
         <Route path="/nossasmarcas" element={<NossasMarcas />}></Route>
         <Route path="/faleconosco" element={<FaleConosco />}></Route>
       </Routes>
+      <Footer />
     </>
   );
 }

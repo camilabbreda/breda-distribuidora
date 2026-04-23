@@ -130,9 +130,6 @@ export default function FaleConosco() {
           </div>
         </section>
       </main>
-      <footer className="fc-footer">
-        <p>© 2026 BREDA Distribuidora. Todos os direitos reservados.</p>
-      </footer>
     </div>
   );
 }

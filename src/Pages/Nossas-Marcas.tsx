@@ -201,9 +201,6 @@ export default function NossasMarcas() {
           </div>
         </section>
       </main>
-      <footer className="nm-footer">
-        <p>© 2026 BREDA Distribuidora. Todos os direitos reservados.</p>
-      </footer>
     </div>
   );
 }
