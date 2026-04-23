@@ -1,72 +1,424 @@
-.container{
-    height:80%; 
-    display:flex; 
-    align-items:center; 
-    justify-content:center;
+.pi-page {
+  min-height: 100vh;
+  background: #f9f9f9;
+  font-family: 'Inter', system-ui, sans-serif;
+  color: #1a1c1c;
 }
 
-.container img{
-    width: auto;
-    height: 100%;
+.pi-main {
+  overflow-x: hidden;
 }
 
-.highlight{
-    font-family: sans-serif, 'Arial', 'Helvetica', 'sans-serif';
-    font-size: 26px;
-    font-weight: 500;
-    text-align: center;
-    margin-top: 50px;
-    margin-bottom: 30px;
+.pi-inner {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 32px;
+  padding-right: 32px;
+  box-sizing: border-box;
 }
 
-.homeCarousel{
-    width: 100vw;
-    height: 350px;
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background: #ffffff;
+.pi-kicker {
+  margin: 0 0 16px;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #9b0004;
 }
 
-.homeCarouselViewport{
-    width: 100%;
-    max-width: 1000px;
-    height: clamp(240px, 40vw, 480px);
-    background: #ffffff;
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
+.pi-kickerSmall {
+  margin: 0 0 16px;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #9b0004;
 }
 
-.homeCarouselImage{
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    display: block;
-    user-select: none;
+.pi-kickerCenter {
+  margin: 0 0 16px;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #9b0004;
 }
 
-.homeCarouselDots{
-    margin-top: 16px;
-    display: flex;
-    gap: 10px;
-    justify-content: center;
-    align-items: center;
-    background: #ffffff;
+.pi-textAccent {
+  color: #9b0004;
 }
 
-.homeCarouselDot{
-    width: 10px;
-    height: 10px;
-    padding: 0;
-    border-radius: 999px;
-    border: none;
-    background: #cfcfcf;
-    cursor: pointer;
+/* Hero */
+.pi-hero {
+  background: #f3f3f3;
+  padding: 128px 0 96px;
 }
 
-.homeCarouselDotActive{
-    background: #F3525A;
+.pi-heroGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: center;
+}
+
+.pi-heroTitle {
+  margin: 0 0 16px;
+  font-size: clamp(40px, 6vw, 72px);
+  font-weight: 800;
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+}
+
+.pi-heroLead {
+  margin: 0;
+  max-width: 512px;
+  padding-top: 8px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.625;
+  color: #5d3f3b;
+}
+
+.pi-heroCtaWrap {
+  padding-top: 24px;
+}
+
+.pi-btnConsultor {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  min-height: 76px;
+  padding: 21px 41px;
+  border-radius: 8px;
+  border: 1px solid #9b2b00;
+  background: linear-gradient(90deg, #9b2b00 0%, #b91c1c 91%);
+  color: #fff;
+  font-size: 16px;
+  font-weight: 900;
+  line-height: 20px;
+  letter-spacing: 0.0875em;
+  text-transform: uppercase;
+  text-decoration: none;
+  box-sizing: border-box;
+  backdrop-filter: blur(6px);
+}
+
+.pi-btnConsultor:hover {
+  filter: brightness(1.05);
+}
+
+.pi-btnConsultorIcon {
+  width: 63px;
+  height: 63px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.pi-heroVisual {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pi-heroPhotoWrap {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.pi-heroPhotoTilt {
+  transform: rotate(2deg);
+  max-width: 100%;
+}
+
+.pi-heroPhoto {
+  max-width: 475px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+.pi-heroPhoto img {
+  display: block;
+  width: 125%;
+  max-width: none;
+  height: auto;
+  margin-left: -12.5%;
+}
+
+.pi-heroStatCard {
+  position: absolute;
+  left: -24px;
+  bottom: -16px;
+  padding: 33px;
+  border-radius: 8px;
+  background: #fff;
+  border: 1px solid rgba(145, 111, 106, 0.05);
+  box-shadow: 0 12px 32px rgba(155, 0, 4, 0.08);
+}
+
+.pi-heroStatValue {
+  margin: 0;
+  font-size: 36px;
+  font-weight: 800;
+  line-height: 40px;
+  letter-spacing: -0.05em;
+  color: #9b0004;
+}
+
+.pi-heroStatLabel {
+  margin: 4px 0 0;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+  color: #5f5e5e;
+}
+
+/* Stats */
+.pi-stats {
+  background: #f3f3f3;
+  padding: 80px 0;
+}
+
+.pi-statsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 48px;
+}
+
+.pi-statCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 7.5px;
+  padding: 33px;
+  border-radius: 8px;
+  background: #fff;
+  border: 1px solid rgba(230, 189, 183, 0.15);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  text-align: center;
+}
+
+.pi-statNumber {
+  margin: 0;
+  font-size: 60px;
+  font-weight: 900;
+  line-height: 60px;
+  color: #9b0004;
+}
+
+.pi-statCaption {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #64748b;
+}
+
+/* Brands */
+.pi-brands {
+  background: #f3f3f3;
+  padding: 128px 0 96px;
+}
+
+.pi-brandsHeader {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 64px;
+}
+
+.pi-sectionTitle {
+  margin: 0;
+  max-width: 560px;
+  font-size: 36px;
+  font-weight: 800;
+  line-height: 40px;
+  letter-spacing: -0.025em;
+}
+
+.pi-portfolioLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #9b0004;
+  text-decoration: none;
+}
+
+.pi-portfolioLink:hover {
+  text-decoration: underline;
+}
+
+.pi-brandCards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 60px;
+  max-width: 100%;
+}
+
+.pi-brandCard {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  padding: 32px;
+  border-radius: 4px;
+  background: #fff;
+}
+
+.pi-brandCard img {
+  max-width: 100%;
+  max-height: 120px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Operation */
+.pi-operation {
+  background: #f3f3f3;
+  padding: 128px 0 128px;
+}
+
+.pi-operationHeader {
+  max-width: 1200px;
+  margin: 0 auto 80px;
+  text-align: center;
+}
+
+.pi-operationTitle {
+  margin: 0 0 16px;
+  font-size: clamp(32px, 4vw, 48px);
+  font-weight: 800;
+  line-height: 48px;
+  letter-spacing: -0.025em;
+}
+
+.pi-operationLead {
+  margin: 0 auto;
+  max-width: 672px;
+  padding-top: 8px;
+  font-size: 16px;
+  line-height: 24px;
+  color: #5d3f3b;
+}
+
+.pi-stepsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 32px;
+}
+
+.pi-stepCard {
+  position: relative;
+  min-height: 274px;
+  padding: 32px;
+  border-radius: 8px;
+  background: #fff;
+  border: 1px solid rgba(145, 111, 106, 0.05);
+  box-sizing: border-box;
+}
+
+.pi-stepIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  margin-bottom: 24px;
+  border-radius: 4px;
+  background: rgba(155, 0, 4, 0.05);
+}
+
+.pi-stepIcon img {
+  max-width: 24px;
+  max-height: 24px;
+  object-fit: contain;
+}
+
+.pi-stepIconShelf {
+  overflow: hidden;
+}
+
+.pi-stepIconShelf img {
+  max-width: 36px;
+  max-height: 36px;
+}
+
+.pi-stepTitle {
+  margin: 0 0 12px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 28px;
+}
+
+.pi-stepText {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.625;
+  color: #5d3f3b;
+}
+
+.pi-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 78px;
+  padding: 32px 160px;
+  border-top: 1px solid rgba(230, 189, 183, 0.1);
+  background: #f3f3f3;
+  text-align: center;
+}
+
+.pi-footer p {
+  margin: 0;
+  font-size: 12px;
+  line-height: 16px;
+  color: #5d3f3b;
+}
+
+@media (max-width: 960px) {
+  .pi-heroGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .pi-heroVisual {
+    order: -1;
+    margin-bottom: 48px;
+  }
+
+  .pi-heroStatCard {
+    position: relative;
+    left: auto;
+    bottom: auto;
+    margin-top: -40px;
+    align-self: flex-start;
+  }
+
+  .pi-statsGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .pi-brandCards {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .pi-stepsGrid {
+    grid-template-columns: 1fr;
+  }
 }

@@ -1,31 +1,345 @@
-.section{
-    height:80%; 
-    display:flex; 
-    flex-direction: column;
-    align-items:center; 
-    justify-content:center;
-}
-.container{
-    height:80%; 
-    display:flex; 
-    flex-direction: column;
-    align-items:center; 
-    justify-content:center;
-}
-td{
-    font-size: 23px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 10px;
-}
-.title{
-    margin: 0;
-    margin-bottom: 15px;
-    font-size: 28px;
-    padding: 0;
+.fc-page {
+  min-height: 100vh;
+  background: #f9f9f9;
+  font-family: 'Inter', system-ui, sans-serif;
+  color: #1a1c1c;
 }
 
-.icon{
-    width: 30px !important;
-    height: auto !important;
+.fc-main {
+  overflow-x: hidden;
+}
+
+.fc-inner {
+  width: 100%;
+  max-width: 1216px;
+  margin: 0 auto;
+  padding-left: 32px;
+  padding-right: 32px;
+  box-sizing: border-box;
+}
+
+.fc-accent {
+  color: #9b0004;
+}
+
+/* Hero */
+.fc-hero {
+  padding: 120px 0 64px;
+}
+
+.fc-heroGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: center;
+}
+
+.fc-kicker {
+  margin: 0 0 16px;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #9b0004;
+}
+
+.fc-heroTitle {
+  margin: 0 0 16px;
+  font-size: clamp(40px, 5vw, 72px);
+  font-weight: 100;
+  line-height: 1.1;
+  letter-spacing: -0.025em;
+}
+
+.fc-heroLead {
+  margin: 0;
+  max-width: 576px;
+  padding-top: 8px;
+  font-size: 18px;
+  line-height: 1.625;
+  color: #5d3f3b;
+}
+
+.fc-heroVisual {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.fc-heroTilt {
+  transform: rotate(2deg);
+}
+
+.fc-heroPhoto {
+  max-width: 584px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+.fc-heroPhoto img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.fc-heroBadge {
+  position: absolute;
+  left: -17px;
+  bottom: -14px;
+  padding: 33px;
+  border-radius: 8px;
+  background: #fff;
+  border: 1px solid rgba(230, 189, 183, 0.15);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+}
+
+.fc-heroBadgeValue {
+  margin: 0;
+  font-size: 36px;
+  font-weight: 100;
+  line-height: 36px;
+  color: #9b0004;
+}
+
+.fc-heroBadgeLabel {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 100;
+  line-height: 20px;
+  letter-spacing: -0.05em;
+  text-transform: uppercase;
+  color: #5d3f3b;
+}
+
+/* Bento contact */
+.fc-bento {
+  background: #f3f3f3;
+  padding: 96px 0;
+}
+
+.fc-bentoGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.fc-card {
+  padding: 32px;
+  border-radius: 8px;
+  background: #fff;
+  box-sizing: border-box;
+}
+
+.fc-cardIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  margin-bottom: 24px;
+  border-radius: 8px;
+  background: #f3f3f3;
+}
+
+.fc-cardTitle {
+  margin: 0 0 16px;
+  font-size: 24px;
+  font-weight: 100;
+  line-height: 32px;
+}
+
+.fc-cardBody {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  color: #5d3f3b;
+}
+
+.fc-cardHeading {
+  margin: 0 0 24px;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 32px;
+  color: #5d3f3b;
+}
+
+.fc-contactList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.fc-contactList li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.fc-contactList a {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #1a1c1c;
+  text-decoration: none;
+}
+
+.fc-contactList a:hover {
+  color: #9b0004;
+}
+
+/* Logistics */
+.fc-logistics {
+  padding: 48px 0 96px;
+}
+
+.fc-logGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: center;
+}
+
+.fc-kickerMuted {
+  margin: 0 0 16px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #9b0004;
+}
+
+.fc-logTitle {
+  margin: 0 0 16px;
+  font-size: 36px;
+  font-weight: 100;
+  line-height: 45px;
+}
+
+.fc-logLead {
+  margin: 0 0 32px;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 26px;
+  color: #5d3f3b;
+}
+
+.fc-infoStack {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.fc-infoRow {
+  display: flex;
+  gap: 16px;
+  padding: 24px;
+  border-radius: 8px;
+  background: #f3f3f3;
+}
+
+.fc-infoRow h3 {
+  margin: 0 0 4px;
+  font-size: 18px;
+  font-weight: 100;
+  line-height: 28px;
+}
+
+.fc-infoRow p {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+  color: #5d3f3b;
+}
+
+.fc-logMap {
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  min-height: 360px;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+}
+
+.fc-logMapImg {
+  width: 100%;
+  height: 100%;
+  min-height: 360px;
+  object-fit: cover;
+  display: block;
+}
+
+.fc-logMapTint {
+  position: absolute;
+  inset: 0;
+  mix-blend-mode: multiply;
+  pointer-events: none;
+}
+
+.fc-logMapOverlay {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.35;
+}
+
+.fc-mapBtn {
+  position: absolute;
+  right: 24px;
+  bottom: 24px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 24px;
+  border-radius: 12px;
+  background: #fff;
+  font-size: 14px;
+  font-weight: 100;
+  line-height: 20px;
+  color: #1a1c1c;
+  text-decoration: none;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+}
+
+.fc-mapBtn:hover {
+  color: #9b0004;
+}
+
+.fc-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 78px;
+  padding: 32px;
+  border-top: 1px solid rgba(230, 189, 183, 0.1);
+  background: #f3f3f3;
+  text-align: center;
+}
+
+.fc-footer p {
+  margin: 0;
+  font-size: 12px;
+  line-height: 16px;
+  color: #5d3f3b;
+}
+
+@media (max-width: 960px) {
+  .fc-heroGrid,
+  .fc-bentoGrid,
+  .fc-logGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .fc-heroBadge {
+    position: relative;
+    left: auto;
+    bottom: auto;
+    margin-top: 16px;
+  }
 }
