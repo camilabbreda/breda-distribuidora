@@ -391,13 +391,14 @@
   align-items: center;
   justify-content: center;
   gap: 16px;
-  min-height: 83px;
-  padding: 16px 40px;
+  min-height: 53px;
+  height: auto;
+  padding: 10px 40px;
   border-radius: 8px;
   background: #fff;
   color: #9b0004;
   font-size: 18px;
-  font-weight: 700;
+  font-weight: 600;
   line-height: 28px;
   text-decoration: none;
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
@@ -411,7 +412,12 @@
   .qs-introGrid {
     grid-template-columns: 1fr;
   }
-
+  .qs-ctaBtn{
+    min-height: 53px;
+    height: auto;
+    font-size: 20px;
+    padding: 10px 20px;
+  }
   .qs-introBadge {
     position: relative;
     left: auto;

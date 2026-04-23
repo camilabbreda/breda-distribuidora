@@ -370,8 +370,8 @@
   align-items: center;
   justify-content: center;
   gap: 12px;
-  min-height: 83px;
-  padding: 16px 40px;
+  min-height: 53px;
+  padding: 10px 40px;
   border-radius: 8px;
   background: #fff;
   color: #9b0004;
@@ -391,7 +391,12 @@
     padding: 48px 32px;
     flex-direction: column;
   }
-
+  .nm-ctaBtn{
+    min-height: 53px;
+    height: auto;
+    font-size: 20px;
+    padding: 10px 20px;
+  }
   .nm-heroVisual {
     position: relative;
     width: 100%;
