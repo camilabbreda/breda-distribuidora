@@ -2,28 +2,28 @@ import '../css/Pagina-inicial.css';
 import { Link } from 'react-router-dom';
 
 const imgHeroShelf =
-  'https://www.figma.com/api/mcp/asset/5d6c2e44-6541-4527-a0bd-15d52b715e73';
+  'img/fotos_figma/prateleira-mercado.png';
 const imgWhatsappBadge =
-  'https://www.figma.com/api/mcp/asset/cc8bff00-a80a-4361-9fe6-33b0d2d5dd6f';
-const imgDori = 'https://www.figma.com/api/mcp/asset/208404ed-708c-4f5d-b665-25690b0486bc';
+  'img/whats-branco.png';
+const imgDori = 'img/marcas/logo-dori.png';
 const imgSevenBoys =
-  'https://www.figma.com/api/mcp/asset/1b5c151c-4c2a-40a4-b84f-b526cdb6e4b9';
+  'img/marcas/logo-sevenboys.png';
 const imgDanilla =
-  'https://www.figma.com/api/mcp/asset/560ae4a3-12dd-4e01-a1a3-b898d1b6fabe';
+  'img/marcas/logo-danilla.png';
 const imgPrateleiras =
-  'https://www.figma.com/api/mcp/asset/47310099-866b-4b06-9c19-ee1a2e4fa16f';
+  'img/icones/icon-prateleira-vermelho.png';
 const iconSales =
-  'https://www.figma.com/api/mcp/asset/3884c13e-ec2d-436e-9a9c-aef86a54447b';
+  'img/icones/icon-pessoas-vermelho.svg';
 const iconDeposit =
-  'https://www.figma.com/api/mcp/asset/0b6b5f43-ced0-440d-aeaf-2d4f77019bc3';
+  'img/icones/icon-termometro-vermelho.svg';
 const iconPicking =
-  'https://www.figma.com/api/mcp/asset/2626f239-7c75-4d73-b97f-c0c420c9f006';
+  'img/icones/icon-maquina-vermelho.svg';
 const iconInvoice =
-  'https://www.figma.com/api/mcp/asset/535aa15c-b859-48e8-b0c7-fa8695d1278f';
+  'img/icones/icon-papel-vermelho.svg';
 const iconDelivery =
-  'https://www.figma.com/api/mcp/asset/1903a56f-3621-47cd-b88f-4e36b26b3406';
+  'img/icones/icon-caminhao-vermelho.svg';
 const iconArrow =
-  'https://www.figma.com/api/mcp/asset/dead0699-8d04-4ac5-bf00-515305cc315f';
+  'img/icones/rigth-arrow-vermelha.svg';
 
 export default function PaginaInicial() {
   return (
@@ -188,7 +188,7 @@ export default function PaginaInicial() {
               </article>
               <article className="pi-stepCard">
                 <div className="pi-stepIcon pi-stepIconShelf">
-                  <img src={imgPrateleiras} alt="" />
+                  <img src={imgPrateleiras} alt="Merchandising no PDV" />
                 </div>
                 <h3 className="pi-stepTitle">Merchandising no PDV</h3>
                 <p className="pi-stepText">

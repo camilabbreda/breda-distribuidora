@@ -1,23 +1,14 @@
 import '../css/Fale-conosco.css';
 
-const imgHero =
-  'https://www.figma.com/api/mcp/asset/b7656804-5609-44a0-9b66-d3612081ccba';
-const imgWarehouse =
-  'https://www.figma.com/api/mcp/asset/73088107-53ef-432e-8e46-34007ef4bc53';
-const imgMapOverlay =
-  'https://www.figma.com/api/mcp/asset/aca3a65f-0675-4f88-8ad3-527e3a369430';
-const iconPhone =
-  'https://www.figma.com/api/mcp/asset/b8c8652a-b050-48f2-a3f1-7aba45733f31';
-const iconWhatsapp =
-  'https://www.figma.com/api/mcp/asset/74becd8d-3f4e-435c-81a2-d11aa67492a7';
-const iconEmail =
-  'https://www.figma.com/api/mcp/asset/edf90c91-f939-4cad-b99d-20013a6a74fe';
-const iconPin =
-  'https://www.figma.com/api/mcp/asset/1693b56c-4267-4291-a294-f631c9381ea3';
-const iconClock =
-  'https://www.figma.com/api/mcp/asset/3fd92d20-1797-4baf-a503-9cedf4ff91d3';
-const iconMapBtn =
-  'https://www.figma.com/api/mcp/asset/9288aeee-60e4-4f40-b80b-5670e478550f';
+const imgHero = 'img/fotos_figma/equipe-fale-conosco-hero.png';
+const imgWarehouse = 'img/fotos_figma/centro-logistico-aereo.png';
+const imgMapOverlay = 'img/fotos_figma/mapa-regiao-overlay.svg';
+const iconPhone = 'img/icones/icon-telefone-vermelho.svg';
+const iconWhatsapp = 'img/icones/icon-whatsapp-vermelho.svg';
+const iconEmail = 'img/icones/icon-email-vermelho.svg';
+const iconPin = 'img/icones/icon-pin-local-vermelho.svg';
+const iconClock = 'img/icones/icon-relogio-vermelho.svg';
+const iconMapBtn = 'img/icones/icon-maps-seta-vermelho.svg';
 
 const MAPS_URL =
   'https://www.google.com/maps/search/?api=1&query=BR+282+km+520.7+Xaxim+SC';

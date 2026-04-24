@@ -1,23 +1,14 @@
 import '../css/Quem-somos.css';
 
-const imgWarehouseBg =
-  'https://www.figma.com/api/mcp/asset/2b2a41c6-5a9f-421b-8fa1-59c3d3d0df51';
-const imgDistribution =
-  'https://www.figma.com/api/mcp/asset/f8c58113-b15e-4c9c-8f13-3e4dfaaa292f';
-const imgFleet =
-  'https://www.figma.com/api/mcp/asset/aac1530f-b519-475f-a5e2-47c3a057b7a4';
-const imgStorage =
-  'https://www.figma.com/api/mcp/asset/1d8a1d65-16fa-4e3d-83df-b0f361858861';
-const imgDock =
-  'https://www.figma.com/api/mcp/asset/1b148c4b-7276-4e5d-b4c0-01d003793c6f';
-const imgWhatsapp =
-  'https://www.figma.com/api/mcp/asset/a8a1eb63-9e6d-4441-982e-4e06147bf6ca';
-const iconMission =
-  'https://www.figma.com/api/mcp/asset/b03e5e18-a6a4-4809-b79d-4e186252b7e5';
-const iconVision =
-  'https://www.figma.com/api/mcp/asset/a10ceac6-634d-4c72-88e7-12627226c976';
-const iconValues =
-  'https://www.figma.com/api/mcp/asset/f729c548-cc61-4790-9d92-af074d5aa41d';
+const imgWarehouseBg = 'img/fotos_figma/armazem-hero-quem-somos.png';
+const imgDistribution = 'img/fotos_figma/centro-distribuicao-quem-somos.png';
+const imgFleet = 'img/fotos_figma/frota-quem-somos.png';
+const imgStorage = 'img/fotos_figma/armazenagem-wms-quem-somos.png';
+const imgDock = 'img/fotos_figma/doca-carregamento-quem-somos.png';
+const imgWhatsapp = 'img/whatsapp-cta-branco.png';
+const iconMission = 'img/icones/icon-missao-vermelho.svg';
+const iconVision = 'img/icones/icon-visao-vermelho.svg';
+const iconValues = 'img/icones/icon-valores-vermelho.svg';
 
 export default function QuemSomos() {
   return (
@@ -160,7 +151,7 @@ export default function QuemSomos() {
                 target="_blank"
                 rel="noreferrer"
               >
-                <img src={imgWhatsapp} alt="" width={66} height={66} />
+                <img src={imgWhatsapp} alt="Whatsapp" />
                 <span>Fale com um Especialista</span>
               </a>
             </div>

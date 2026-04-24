@@ -1,83 +1,27 @@
 import '../css/Nossas-marcas.css';
 
-const imgHero = 'https://www.figma.com/api/mcp/asset/2dcc937e-b828-4799-878b-6a0d025a4a89';
-const imgGuloseimas =
-  'https://www.figma.com/api/mcp/asset/bd152f81-f7b4-46e4-a3e0-d6b8f2fc0a47';
-const imgSnacks =
-  'https://www.figma.com/api/mcp/asset/d314a6b4-67ab-4e4e-b98f-5789fc4a085c';
-const imgMercearia =
-  'https://www.figma.com/api/mcp/asset/d904ef9d-f802-480c-8446-65498637bbd6';
-const imgBrinquedos =
-  'https://www.figma.com/api/mcp/asset/c37a095e-653e-4a9e-ba7f-03ab2f51ba06';
-const imgWhatsapp = 'https://www.figma.com/api/mcp/asset/4d14a846-28d7-4da3-ac8e-b64e9f4be6d4';
+const imgHero = 'img/fotos_figma/nossas-marcas-hero.png';
+const imgGuloseimas = 'img/fotos_figma/categoria-doces-guloseimas.jpg';
+const imgSnacks = 'img/fotos_figma/categoria-snacks-biscoitos.jpg';
+const imgMercearia = 'img/fotos_figma/categoria-mercearia.jpg';
+const imgBrinquedos = 'img/fotos_figma/categoria-doces-brinquedos.png';
+const imgWhatsapp = 'img/whatsapp-cta-branco.png';
 
 const BRANDS: { name: string; src: string; alt: string }[] = [
-  { name: 'Dori', src: 'https://www.figma.com/api/mcp/asset/110f55ca-6404-4da6-8f46-37dd51fcadb2', alt: 'Dori' },
-  {
-    name: 'Danilla Brasil',
-    src: 'https://www.figma.com/api/mcp/asset/2578a2b2-5db8-46e0-b660-70b3745a2068',
-    alt: 'Danilla Brasil',
-  },
-  {
-    name: 'Seven Boys',
-    src: 'https://www.figma.com/api/mcp/asset/3d5f2f17-b114-4d2e-9214-fcde8e9ecbdf',
-    alt: 'Seven Boys',
-  },
-  {
-    name: 'Wickbold',
-    src: 'https://www.figma.com/api/mcp/asset/8c8d4b6e-a69a-4c0c-873c-db4614880fc2',
-    alt: 'Wickbold',
-  },
-  {
-    name: 'Chá Prenda',
-    src: 'https://www.figma.com/api/mcp/asset/2600ee98-09c3-43c9-8ad3-c75ead8a02b1',
-    alt: 'Chá Prenda',
-  },
-  {
-    name: 'Biosoft',
-    src: 'https://www.figma.com/api/mcp/asset/2b37d772-778b-41ac-8868-6b1106b248c2',
-    alt: 'Biosoft',
-  },
-  {
-    name: 'Montevergine',
-    src: 'https://www.figma.com/api/mcp/asset/062bea70-19f9-4554-a906-c5c61f22a7c1',
-    alt: 'Montevergine',
-  },
-  {
-    name: 'Bilu',
-    src: 'https://www.figma.com/api/mcp/asset/b360f573-1c1a-403e-a049-668b767d1130',
-    alt: 'Bilu',
-  },
-  {
-    name: 'Petry Sabores',
-    src: 'https://www.figma.com/api/mcp/asset/2e1da51d-ee0c-4436-9212-0903db9aee21',
-    alt: 'Petry Sabores',
-  },
-  {
-    name: 'Doces India',
-    src: 'https://www.figma.com/api/mcp/asset/956fb4b8-7373-48ee-9a1a-8ba816099090',
-    alt: 'Doces India',
-  },
-  {
-    name: 'Kodilar',
-    src: 'https://www.figma.com/api/mcp/asset/f7ad6490-2caa-44fd-aaed-9903c7d0e442',
-    alt: 'Kodilar',
-  },
-  {
-    name: 'Florestal',
-    src: 'https://www.figma.com/api/mcp/asset/4351b9db-fce3-4b70-b6cc-5efea16738c5',
-    alt: 'Florestal',
-  },
-  {
-    name: 'Regina',
-    src: 'https://www.figma.com/api/mcp/asset/c954b2f6-430a-49a2-8df4-3970845ed141',
-    alt: 'Regina',
-  },
-  {
-    name: 'Natural Life',
-    src: 'https://www.figma.com/api/mcp/asset/a8e3bf79-b6fb-41cb-bc6d-b56701994b1f',
-    alt: 'Natural Life',
-  },
+  { name: 'Dori', src: 'img/marcas/logo-dori.png', alt: 'Dori' },
+  { name: 'Danilla Brasil', src: 'img/marcas/logo-danilla-brasil.png', alt: 'Danilla Brasil' },
+  { name: 'Seven Boys', src: 'img/marcas/logo-sevenboys.png', alt: 'Seven Boys' },
+  { name: 'Wickbold', src: 'img/marcas/logo-wickbold.png', alt: 'Wickbold' },
+  { name: 'Chá Prenda', src: 'img/marcas/logo-cha-prenda.jpg', alt: 'Chá Prenda' },
+  { name: 'Biosoft', src: 'img/marcas/logo-biosoft.jpg', alt: 'Biosoft' },
+  { name: 'Montevergine', src: 'img/marcas/logo-montevergine.png', alt: 'Montevergine' },
+  { name: 'Bilu', src: 'img/marcas/logo-bilu.jpg', alt: 'Bilu' },
+  { name: 'Petry Sabores', src: 'img/marcas/logo-petry-sabores.png', alt: 'Petry Sabores' },
+  { name: 'Doces India', src: 'img/marcas/logo-doces-india.png', alt: 'Doces India' },
+  { name: 'Kodilar', src: 'img/marcas/logo-kodilar.png', alt: 'Kodilar' },
+  { name: 'Florestal', src: 'img/marcas/logo-florestal.png', alt: 'Florestal' },
+  { name: 'Regina', src: 'img/marcas/logo-regina.png', alt: 'Regina' },
+  { name: 'Natural Life', src: 'img/marcas/logo-natural-life.jpg', alt: 'Natural Life' },
 ];
 
 export default function NossasMarcas() {
