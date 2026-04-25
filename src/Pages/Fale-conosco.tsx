@@ -1,8 +1,6 @@
 import '../css/Fale-conosco.css';
 
 const imgHero = 'img/fotos_figma/equipe-fale-conosco-hero.png';
-const imgWarehouse = 'img/fotos_figma/centro-logistico-aereo.png';
-const imgMapOverlay = 'img/fotos_figma/mapa-regiao-overlay.svg';
 const iconPhone = 'img/icones/icon-telefone-vermelho.svg';
 const iconWhatsapp = 'img/icones/icon-whatsapp-vermelho.svg';
 const iconEmail = 'img/icones/icon-email-vermelho.svg';
@@ -10,8 +8,12 @@ const iconPin = 'img/icones/icon-pin-local-vermelho.svg';
 const iconClock = 'img/icones/icon-relogio-vermelho.svg';
 const iconMapBtn = 'img/icones/icon-maps-seta-vermelho.svg';
 
-const MAPS_URL =
-  'https://www.google.com/maps/search/?api=1&query=BR+282+km+520.7+Xaxim+SC';
+/** Short link → Breda Distribuidora no Google Maps */
+const MAPS_URL = 'https://maps.app.goo.gl/Ns92dGy1ZEqpWcTP9';
+
+/** Incorporar mapa (Google); se o embed parar de carregar, gere de novo em Maps → Compartilhar → Incorporar mapa */
+const MAPS_EMBED_SRC =
+  'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3556.3532590103364!2d-52.5428753!3d-26.9557103!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94e4c8bd7b3d54f9%3A0x815640870e56a7ca!2sBreda%20Distribuidora%20Ltda!5e0!3m2!1spt-BR!2sbr!4v1!5m2!1spt-BR!2sbr';
 
 export default function FaleConosco() {
   return (
@@ -94,7 +96,7 @@ export default function FaleConosco() {
                   <img src={iconPin} alt="" width={20} height={25} />
                   <div>
                     <h3>Endereço Principal</h3>
-                    <p>BR 282, km 520,7</p>
+                    <p>BR 282, km 520,7 — interior</p>
                     <p>Xaxim - SC, 89825-000</p>
                   </div>
                 </div>
@@ -109,10 +111,14 @@ export default function FaleConosco() {
               </div>
             </div>
             <div className="fc-logMap">
-              <img src={imgWarehouse} alt="Centro logístico Breda" className="fc-logMapImg" />
-              <div className="fc-logMapTint" aria-hidden="true">
-                <img src={imgMapOverlay} alt="" className="fc-logMapOverlay" />
-              </div>
+              <iframe
+                className="fc-logMapFrame"
+                title="Mapa: Breda Distribuidora — BR 282 km 520,7, Xaxim"
+                src={MAPS_EMBED_SRC}
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                allowFullScreen
+              />
               <a className="fc-mapBtn" href={MAPS_URL} target="_blank" rel="noreferrer">
                 <img src={iconMapBtn} alt="" width={11} height={11} />
                 Ver no Google Maps
