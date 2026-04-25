@@ -261,6 +261,7 @@
 
 .fc-logMap {
   position: relative;
+  width: 100%;
   border-radius: 16px;
   overflow: hidden;
   min-height: 360px;
@@ -308,10 +309,41 @@
     grid-template-columns: 1fr;
   }
 
+  .fc-logGrid {
+    align-items: start;
+    gap: 32px;
+  }
+
+  /* Map height from width; min-height + aspect-ratio fight on narrow screens and inflate the box */
+  .fc-logMap {
+    min-height: 200px;
+    max-height: none;
+    height: auto;
+  }
+
   .fc-heroBadge {
     position: relative;
     left: auto;
     bottom: auto;
     margin-top: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .fc-logMap {
+    border-radius: 12px;
+    /* Slightly shorter on very small phones so the section does not dominate the screen */
+    aspect-ratio: 5 / 4;
+  }
+
+  .fc-mapBtn {
+    right: 12px;
+    bottom: 12px;
+    left: 12px;
+    max-width: none;
+    justify-content: center;
+    padding: 10px 16px;
+    font-size: 13px;
+    line-height: 18px;
   }
 }
